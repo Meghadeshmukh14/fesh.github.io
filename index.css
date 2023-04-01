@@ -1,0 +1,49 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h3{
+	padding: 10px;
+}
+list,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#nav-item{
+    color: white;
+}
+#logo{
+	width: 30%;
+}
+#logo1{
+	width: 40%;
+}
+.heading{
+	font-family: serif;
+	font-weight: bold;
+}
+.brand{
+	font-size: 20px;
+	font-family: serif;
+	font-weight: bold;
+}
+.button{
+	background-color: orange;
+	border: orange;
+	margin: 2px 0px 0px 20px;
+	padding: 3px;
+	color: white;
+}
+.heading1{
+	font-weight: bold;
+	font-size: 40px;
+	font-family: serif;
+}
+.cloth{
+	font-size: 30px;
+	font-family: serif;
+	font-weight: bold;
+}
+
