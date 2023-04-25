@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!---bootstrap link-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- font awesome link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="row">
+	<!-- first user part -->
+	<div class="col-md-6">
+		<div class="text-center p-3">
+			<center>
+				<div class="container-mobile" id="phone1" style="background-color: #150b52;">
+					<div class="point"></div>
+					<div class="phone-camera"></div>
+					<div class="finger-scanner" id="usr1btn"></div>
+				</div>
+			</center>
+			<!-- <button class="btn btn-secondary w-25 " id="usr1btn">First User</button> -->
+		</div>
+		<center>
+			<div class="container-mobile" id="user1phone" style="background-image: url(image/dp2.jpg);display: none;">
+				<div class="point"></div>
+				<div class="phone-camera"></div>
+				<div><i class="fa-solid fa-lock"></i></div>
+				<div class="text" id="usr1EnterPin">Enter PIN</div>
+				<div class="contain" id="pinlen1">Your pin contains atlist 6 digit</div>
+				<div class="input-area">
+					<input type="password" name="" id="usr1textBox"><br><br><br>
+					<button id="btn1" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn1').innerHTML">1</button>
+					<button id="btn2" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn2').innerHTML">2</button>
+					<button id="btn3" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn3').innerHTML">3</button>
+					<button id="btn4" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn4').innerHTML">4</button><br><br>
+					<button id="btn5" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn5').innerHTML">5</button>
+					<button id="btn6" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn6').innerHTML">6</button>
+					<button id="btn7" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn7').innerHTML">7</button>
+					<button id="btn8" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn8').innerHTML">8</button><br><br>
+
+					<button id="usr1phoneCrossbtn"><i class="fa-solid fa-xmark"></i></button>
+
+					<button id="btn10" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn10').innerHTML">9</button>
+					<button id="btn11" onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn11').innerHTML">0</button>
+					 <button id="usr1phoneRightbtn"><i class="fa-solid fa-check"></i></button> 
+				</div>
+				<div style="width:80px;height: 23px;border-radius: 10px; background-color: gray;margin-top: 27px;"></div>
+			</div>
+
+			<!-- ChatBox first user Mobile part -->
+			<div class="container-mobile" style="background-image: url(image/img.jpg);display: none;" id="user1chat">
+				<div class="point"></div>
+				<!-- header part -->
+				<div class="msg-header" style="background-color: #630547;">
+					<div class="left-icon" id="leftback1">
+						<i class="fa-solid fa-left-long" style="margin-top: 8px;margin-left: 2px;cursor: pointer;"></i>
+					</div>
+					<div class="msg-header-img">
+						<img src="image/dp3.jpg" id="dp1">
+					</div>
+					<div class="active">
+						<h4>User 1</h4>
+						<h6 id="typmsg1">online</h6>
+					</div>
+					<div class="header-icons">
+						<i class="fa fa-phone"></i>
+						<i class="fa fa-video-camera"></i>
+						<span class=" dropstart ">
+    						<span data-bs-toggle="dropdown">
+      							<i class="fa-solid fa-ellipsis-vertical" style="color: #fff;cursor:pointer;margin: 5px;font-size: 13px;"></i>
+    						</span>
+    						<ul class="dropdown-menu">
+      							<li><a class="dropdown-item" href="#" id="clearOp1">Clear All</a></li>
+      							<li><a class="dropdown-item" href="#" id="chngtheme1">Change Wallpaper</a></li>
+      							<li><a class="dropdown-item" href="#" id="chngDp1">Profile Change</a></li>
+      							<li><a class="dropdown-item" href="#" id="logout1">Log Out</a></li>
+    						</ul>
+  						</span>
+					</div>
+				</div>
+				<!-- msg part -->
+				<div class="chat-page">
+					<div class="msg-inbox">
+		  				<div class="chats">
+		  					<div class="msg-page">
+		  						<div id="usr1TextArea">
+									
+								</div>
+								<p id="chatTime1"></p>
+		  					</div>
+		  				</div>
+		    		</div>
+				</div>
+				<!----Text write Part----->
+				<div class="msg-bottom">
+					<div class="heart-icone" id="like1">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+					<div class="smile-icone" id="smile1">
+						<i class="fa-solid fa-face-smile"></i>
+					</div>
+					<div class="input-group">
+						<input type="text" name="" class="form-control" placeholder="write message..." id="msg1TextBox">
+						<div class="input-group-append">
+							<span class="input-group-text" autocomplete="off" id="msgusr1send"><i class="fa fa-paper-plane" style="color:#7a5582;"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+	</div>
+	<!-- first user part end -->
+	<!-- Second User part -->
+
+	<div class="col-md-6">
+		<div class="text-center p-3">
+			<center>
+				<div class="container-mobile" id="phone2" style="background-color: #150b52;">
+					<div class="point"></div>
+					<div class="phone-camera"></div>
+					<div class="finger-scanner" id="usr2btn"></div>
+				</div>
+			</center>
+		</div>
+		<center>
+			<div class="container-mobile" id="user2phone" style="background-image: url(image/img1.png);display: none;">
+				<div class="point"></div>
+				<div class="phone-camera"></div>
+				<div><i class="fa-solid fa-lock"></i></div>
+				<div class="text" id="usr2EnterPin">Enter PIN</div>
+				<div class="contain" id="pinlen2">Your pin contains atlist 6 digit</div>
+				<div class="input-area">
+					<input type="password" name="" id="usr2textBox"><br><br><br>
+					<button id="bttn1" onclick="document.getElementById('usr2textBox').value+=document.getElementById('bttn1').innerHTML">1</button>
+					<button id="bttn2" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn2').innerHTML">2</button>
+					<button id="bttn3" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn3').innerHTML">3</button>
+					<button id="bttn4" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn4').innerHTML">4</button><br><br>
+					<button id="bttn5" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn5').innerHTML">5</button>
+					<button id="bttn6" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn6').innerHTML">6</button>
+					<button id="bttn7" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn7').innerHTML">7</button>
+					<button id="bttn8" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn8').innerHTML">8</button><br><br>
+
+					<button id="usr2phoneCrossbtn"><i class="fa-solid fa-xmark"></i></button>
+
+					<button id="bttn10" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn10').innerHTML">9</button>
+					<button id="bttn11" onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn11').innerHTML">0</button>
+					<button id="usr2phoneRightbtn"><i class="fa-solid fa-check"></i></button>  
+				</div>
+				<div style="width:80px;height: 23px;border-radius: 10px; background-color: gray;margin-top: 27px;"></div>
+			</div>
+
+			<!-- Chatbox second user mobile part -->
+			<div class="container-mobile" id="user2chat" style="background-image: url(image/img7.jpg);display: none;">
+				<div class="point"></div>
+				<!-- header part -->
+				<div class="msg-header" style="background-color: #5c0156;">
+					<div class="left-icon" id="leftback2">
+						<i class="fa-solid fa-left-long" style="margin-top: 8px;margin-left: 2px;cursor: pointer;"></i>
+					</div>
+					<div class="msg-header-img">
+						<img src="image/dp.jpg" id="dp2">
+					</div>
+					<div class="active">
+						<h4>User 2</h4>
+						<h6 id="typmsg2">online</h6>
+					</div>
+					<div class="header-icons">
+						<i class="fa fa-phone"></i>
+						<i class="fa fa-video-camera"></i>
+						<span class=" dropstart">
+    						<span data-bs-toggle="dropdown">
+      							<i class="fa-solid fa-ellipsis-vertical" style="color: #fff;cursor:pointer;margin: 5px;font-size: 13px;"></i>
+    						</span>
+    						<ul class="dropdown-menu">
+      							<li><a class="dropdown-item" href="#" id="clearOp2">Clear All</a></li>
+      							<li><a class="dropdown-item" href="#" id="chngtheme2">Change Wallpaper</a></li>
+      							<li><a class="dropdown-item" href="#" id="chngDp2">Profile Change</a></li>
+      							<li><a class="dropdown-item" href="#" id="logout2">Log Out</a></li>
+    						</ul>
+  						</span>	
+					</div>
+				</div>
+				<!-- msg part -->
+				<div class="chat-page">
+					<div class="msg-inbox">
+		  				<div class="chats">
+		  					<div class="msg-page">
+		  						<div id="usr2TextArea">
+					
+								</div>
+		  					</div>
+		  				</div>
+		    		</div>
+				</div>
+				<!----Text write Part----->
+				<div class="msg-bottom">
+					<div class="heart-icone" id="like2">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+					<div class="smile-icone" id="smile2">
+						<i class="fa-solid fa-face-smile"></i>
+					</div>
+					<div class="input-group">
+						<input type="text" name="" class="form-control" placeholder="write message..." id="msg2TextBox">
+						<div class="input-group-append">
+							<span class="input-group-text" autocomplete="off" id="msgusr2send"><i class="fa fa-paper-plane" style="color:#7a5582;"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+	</div>
+	<!-- second user part end -->
+</div>
+
+
+<!-- javascript link -->
+<script type="text/javascript" src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.container-fluid h1
+{
+	font-family: serif;
+	padding: 30px;
+	font-weight: bold;
+	color: #034f54;
+}
+.text-head
+{
+	font-family: serif;
+	font-weight: 900;
+}
+.title-part
+{
+	color: #380b37;
+	font-family: sans-serif;
+	z-index: 2;
+}
+.container p 
+{
+	word-spacing: 2px;
+}
+.about-pro
+{
+	width: 75%;
+	height: 50%;
+	position: relative;
+	border-radius: 8px;
+	display: grid;
+	overflow: hidden;
+	background-color: white;
+}
+.about-pro::before {
+	 		content: "";
+	 		position: absolute;
+	 		width: 1250px;
+	 		height: 140%;
+	 		background-image: linear-gradient(180deg, #034f54,yellow);
+	 		animation: rotate 4s linear infinite;
+	 	}
+	 	.about-pro::after {
+	 		content: "";
+	 		position: absolute;
+	 		background-color: white;
+	 		inset: 7px;
+	 		border-radius: inherit;
+	 	}
+	 	@keyframes rotate{
+	 		100%{
+	 			rotate: 360deg;
+	 		}
+	 	}

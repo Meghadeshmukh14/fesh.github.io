@@ -1,0 +1,268 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.container-fluid h1{
+	text-align: center;
+	text-shadow: 2px 2px white;
+	font-size: 55px;
+	font-weight: bold;
+	padding: 7px;
+	box-shadow: 0px 0px 30px 0px ;
+	font-family: Algerian;
+	color: #034f54;
+	border-color: black;
+	position: relative;
+  	animation-name: example;
+  	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+	}
+
+	@keyframes example {
+  		0%   {box-shadow: 0px 0px 25px 0px green;}
+  		25%  {box-shadow: 0px 0px 25px 0px yellow;}
+  		50%  {box-shadow: 0px 0px 25px 0px blue;}
+  		75%  {box-shadow: 0px 0px 25px 0px red;}
+  		100% {box-shadow: 0px 0px 25px 0px orange;}
+	}
+	.buttons a
+	{
+		color: white;
+		text-decoration:none;
+/*		background-color: #034f54;*/
+		font-size: 20px;
+		font-family: serif;
+	}
+		/*phone css*/
+		.container-mobile{
+			width: 300px;
+			height: 530px;
+			border: 5px solid;
+			border-radius: 25px;
+			border-bottom: 30px solid;
+			border-top: 11px solid;
+			margin-top: 20px;
+			box-shadow: 0px 0px 80px 0px;
+			position: relative;
+			border-color: black;
+  			animation-name: phone;
+  			animation-duration: 4s;
+  			animation-iteration-count: infinite;
+		}
+			@keyframes phone {
+  			0%   {box-shadow: 0px 0px 25px 0px #800e17;}
+  			25%  {box-shadow: 0px 0px 25px 0px yellow;}
+  			50%  {box-shadow: 0px 0px 25px 0px #9a1ac4;}
+  			75%  {box-shadow: 0px 0px 25px 0px #3e8f2c;}
+  			100% {box-shadow: 0px 0px 25px 0px #f05513;}
+		}
+		.point{
+			height:11px ;
+			width: 11px;
+			border-radius: 100px;
+			background-color: white;
+			margin-top: -4%;
+
+		}
+		.phone-camera
+		{
+			width: 20px;
+			height: 5px;
+			border-radius: 5px;
+			background-color: black;
+		}
+		.finger-scanner
+		{
+			width: 80px;
+			height: 25px;
+			border-radius: 10px;
+			background-color: gray;
+			margin-top: 487px;
+			cursor: pointer;
+			border: 2px solid;
+			animation-name: button;
+  			animation-duration: 2s;
+  			animation-iteration-count: infinite;
+		}
+		@keyframes button {
+  			0%   {background-color: #53754a;}
+  			25%  {background-color: #614a75;}
+  			50%  {background-color: #754a5f;}
+  			75%  {background-color: #4a7564;}
+  			100% {background-color: #4a6775;}
+		}
+		.container-mobile .fa-lock {
+			margin-top: 20%;
+			font-size: 20px;
+			color: white;
+		}
+		.text{
+			margin-top: 22%;
+			color: white;
+			font-size: 21px;
+		}
+		.contain{
+			margin-top: 4%;
+			font-size: 15px;
+			color: white;
+		}
+		.input-area{
+			width: 300px;
+			margin-top: 1%;
+		}
+		.input-area  input{
+			width: 180px;
+			height: 32px;
+			border: none;
+			border-radius: 5px;
+
+		}
+		.input-area button
+		{
+			width: 50px;
+			height: 40px;
+			border-radius: 100px;
+        	box-shadow: 0px 0px 75px 0px;
+        	border-style: none;
+        	font-size: 20px;
+        	cursor: pointer;
+		}
+/*		chatBoxCss*/
+		.msg-header
+		{
+			border: 1px solid #ccc;
+			width: 290px;
+			height: 9%;
+			border-style: none;
+			display:inline-block;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px ;
+		}
+		.left-icon
+		{
+			margin-top: 8px;
+			float: left;
+			color: white;
+		}
+		.msg-header-img img
+		{
+			border-radius:50%;
+			width: 35px;
+			margin-left: 7px;
+			margin-top: 5px;
+			float: left;
+		}
+		.active
+		{
+/*			width: 70px;*/
+			float: left;
+			margin-top: -3px;
+		}
+		.active h4
+		{
+			font-size: 18px;
+			margin-top: 7px;
+			color: #fff;
+			margin-left: 20px;
+		}
+		.active h6
+		{
+			font-size: 12px;
+			margin-left: 17px;
+			line-height: 1px;
+			color: #fff;
+		}
+		.header-icons
+		{
+			width: 100px;
+			float: right;
+			margin-top: 12px;
+			margin-right: 10px;
+		}
+		.header-icons .fa 
+		{
+			color: #fff;
+	 		cursor:pointer;
+	 		margin: 5px;
+	 		font-size: 13px;
+	 		margin-left: 15px;
+		}
+		.dropdown-menu 
+		{
+			font-size: 13px;
+			background-color: #630547;
+		}
+		.chat-page
+		{
+			padding:0 0 50px;
+			margin-top: -12px;
+		}
+		.msg-inbox
+		{
+			border: 0px solid #ccc;
+			width: 290px;
+			overflow: hidden;
+			margin-top: 5px;
+			padding-bottom: 5px;
+		}
+		.chats
+		{
+			padding: 18px 0px 0px 0px;
+		}
+		.msg-page
+		{
+			height: 380px;
+			width: 285px;
+			overflow-y:auto ;
+			overflow-x:auto ;
+		}
+		.msg-bottom
+		{
+ 			position: relative;
+ 			height: 10%;
+ 			width: 290px;
+ 			margin-top: -17%;
+		}
+		.heart-icone
+		{
+			float: left;
+			margin-top: 3px;
+			margin-left: 6px;
+			font-size: 22px;
+			color: #f2421b;
+		}
+		.smile-icone
+		{
+			float: left;
+			margin-top: 3px;
+			margin-left: 6px;
+			font-size: 22px;
+			color: #f5bc2c;
+		}
+		.input-group
+		{
+/*			margin-top: 10px;*/
+			outline: none !important;
+			border-radius: 20px;
+			width: 77% !important;
+			background-color: #fff;
+			cursor: pointer;
+		}
+		.form-control
+		{
+			border: none !important;
+			border-radius: 20px !important;
+		}
+		.input-group-text
+		{
+			background: transparent !important;
+			border: none !important;
+			margin-top: 5px;
+			}
+		.form-control:focus
+		{
+			border-color: none !important;
+			box-shadow: none;
+			border-radius: 20px;
+			border:none;
+		}
